@@ -1,0 +1,29 @@
+﻿Linux 
+Install
+------------ installing postgres on linux ------------------------------------------------------------
+
+1. sudo apt-get install postgresql postgresql-contrib
+2. then to fix lock file issues:
+	a. 	sudo chown -R postgres:postgres /var/run/postgresql
+3. log in to the psql application: osudo -u postgres psql postgres
+4.  Set a password for the "postgres" database role using the command:
+	a. \password postgres
+	b. and give your password when prompted. The password text will be hidden from the console for security purposes.
+5. To Exit from the postgreSql command prompt: Control+d
+6. Create a database from linux
+	a. sudo -u postgres createdb <db name>
+7. install the adminpack extensions:
+	a.  sudo -u postgres psql
+	b.  CREATE EXTENSION adminpack;
+8 reload config files (w/o restart)
+	a. sudo /etc/init.d/postgresql reload
+9. verify server is listening on the default port
+	a. netstat -nlp | grep 5432
+10. for remote access
+	a. sudo nano /etc/postgresql/9.3/main/postgresql.conf
+	b. add: listen_addresses = '*'
+	c. sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+	d. add your network or host address:
+		host    all             all             <ip to allow remote acccess>/24          md5
+11. Restart the database engine
+	a. sudo service postgresql restart

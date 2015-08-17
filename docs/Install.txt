@@ -1,0 +1,5 @@
+﻿1. install node 
+	after installation,  node folder must be in path
+2. install postgres
+	create user account
+3. 

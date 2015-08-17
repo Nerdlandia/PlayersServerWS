@@ -1,0 +1,21 @@
+-- Table: players
+
+-- DROP TABLE players;
+
+CREATE TABLE players
+(
+  userid serial NOT NULL,
+  name text,
+  email text,
+  phone text,
+  salary numeric,
+  deletedate date,
+  signdate date NOT NULL,
+  comments character varying(1500),
+  CONSTRAINT players_pkey PRIMARY KEY (userid)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE players
+  OWNER TO postgres;

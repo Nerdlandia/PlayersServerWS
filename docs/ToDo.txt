@@ -1,0 +1,39 @@
+﻿The below are important topics you'll need to research and write the code for.
+Or, just take a Nerdlandia deep-dive - and learn from our documented experience!!
+
+Database
+1. Using mysql and sql server with this app
+2. Implementing connection pooling and stored procedures with all three relational databases
+3. The use of roles
+4. The best IDEs
+
+Middle Layer
+5. Node packages are great, but come at a cost
+6. Testing tools
+7. Choices and best practices for placing apps in production (windows and linux)
+8. Routing tables
+9. Validation
+
+
+Hybrid web layer
+Angulasrjs
+Ionic
+Alternatives
+
+Emulators
+(Chrome vs Ripple vs Android vs native)
+
+Android vs iOS
+Costs
+Stores
+Deployment
+
+IDE
+Windows
+Webstorm vs Visual Studio
+Which version of Visual Studio?
+Configuring Visual  Studio
+
+Source control
+
+
