@@ -1,0 +1,41 @@
+1. install postgres
+http://www.postgresql.org/download/
+2. postgres gui admin tool (pgadmin)
+http://www.pgadmin.org/
+
+3. install node
+https://nodejs.org/
+
+4. You will need to create 2 folders, server and client
+server will act as your node middlelayer
+
+The client and server files are at github.com/nerdlandia.  You will need both a client and a server.
+The *Vs (Visual Studio) solutions require that you install the (free) Visual Studio Tools for Node.
+
+Server
+5. install the following npm (node package manager) packages:
+	a. pm (support for postgres)
+	b. express (http/web)
+	c. body-parser (access to elements of controls)
+	d. dateformat (date processing)
+example: c:> npm install pg	
+6. in server.js, change the connection string to attach to #1
+
+You can now fire up the server c:> node server.js
+To test: chrome and firefox (ie?) have extensions that can be
+used to test your api. 
+
+Client
+The addresses of the server and ports are located in services.js, in the
+Settings factory at approximately line 78.
+
+The ionic "getting started" walks you through the process of setting up your machine
+at http://ionicframework.com/getting-started/ .  Note that it also has videos to do so.
+Also, they have you installing node, which you did above.
+Plan on the java and android sdk (including phone images) taking up at least 4G.
+
+You will see that there three projects: blank, tabs, and sidemenu.  The app in 
+github.com/nerdlandia uses the tabs project. Use our files from client/www:
+index.html
+all in \js
+all in \templates
