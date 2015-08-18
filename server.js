@@ -8,7 +8,7 @@ var port = 7777;
 
 // var connectionstring = "postgres://<account>:<password>@<ip>:<port>/<database>";
 // var connectionstring = "postgres://john:doe@127.0.0.1:5432/testdatabase";
-var connectionstring = "postgres://postgres:pgsa@10.10.50.252:5432/ionicdemos";
+
 /* CORS to allow cross domain references*/
 server.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
